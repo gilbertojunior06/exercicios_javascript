@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios de Lógica em JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercícios de Lógica em JavaScript</h1>
+
+  <!-- 01 - IMC -->
+  <div class="exercicio">
+    <h2>01 - Calculadora de IMC</h2>
+    <input type="number" id="peso" placeholder="Peso (kg)">
+    <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+    <button onclick="calcularIMC()">Calcular</button>
+    <p id="resultadoIMC"></p>
+  </div>
+
+  <!-- 02 - Conversor de Temperatura -->
+  <div class="exercicio">
+    <h2>02 - Conversor de Temperatura</h2>
+    <input type="number" id="celsius" placeholder="Temperatura em °C">
+    <button onclick="converterTemp()">Converter</button>
+    <p id="resultadoTemp"></p>
+  </div>
+
+  <!-- 03 - Média Simples -->
+  <div class="exercicio">
+    <h2>03 - Média Simples</h2>
+    <input type="number" id="nota1" placeholder="Nota 1">
+    <input type="number" id="nota2" placeholder="Nota 2">
+    <input type="number" id="nota3" placeholder="Nota 3">
+    <button onclick="calcularMedia()">Calcular</button>
+    <p id="resultadoMedia"></p>
+  </div>
+
+  <!-- 04 - Troca de Valores -->
+  <div class="exercicio">
+    <h2>04 - Troca de Valores</h2>
+    <input type="number" id="valorA" placeholder="Valor A">
+    <input type="number" id="valorB" placeholder="Valor B">
+    <button onclick="trocarValores()">Trocar</button>
+    <p id="resultadoTroca"></p>
+  </div>
+
+  <!-- 05 - Área do Círculo -->
+  <div class="exercicio">
+    <h2>05 - Área do Círculo</h2>
+    <input type="number" id="raio" placeholder="Raio">
+    <button onclick="calcularAreaCirculo()">Calcular</button>
+    <p id="resultadoCirculo"></p>
+  </div>
+
+  <!-- 06 - Nome Completo -->
+  <div class="exercicio">
+    <h2>06 - Concatenador de Nome</h2>
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="sobrenome" placeholder="Sobrenome">
+    <button onclick="concatenarNome()">Concatenar</button>
+    <p id="resultadoNome"></p>
+  </div>
+
+  <!-- 07 - Verificador de Idade -->
+  <div class="exercicio">
+    <h2>07 - Verificador de Idade</h2>
+    <input type="number" id="anoNascimento" placeholder="Ano de nascimento">
+    <button onclick="calcularIdade()">Calcular</button>
+    <p id="resultadoIdade"></p>
+  </div>
+
+  <!-- 08 - Cálculo de Desconto -->
+  <div class="exercicio">
+    <h2>08 - Cálculo de Desconto</h2>
+    <input type="number" id="preco" placeholder="Preço">
+    <input type="number" id="desconto" placeholder="Desconto (%)">
+    <button onclick="calcularDesconto()">Calcular</button>
+    <p id="resultadoDesconto"></p>
+  </div>
+
+  <!-- 09 - Conversor de Moeda -->
+  <div class="exercicio">
+    <h2>09 - Conversor de Moeda</h2>
+    <input type="number" id="reais" placeholder="Valor em R$">
+    <input type="number" id="taxaCambio" placeholder="Taxa de câmbio">
+    <button onclick="converterMoeda()">Converter</button>
+    <p id="resultadoMoeda"></p>
+  </div>
+
+  <!-- 10 - Sucessor e Antecessor -->
+  <div class="exercicio">
+    <h2>10 - Sucessor e Antecessor</h2>
+    <input type="number" id="numero" placeholder="Número">
+    <button onclick="sucessorAntecessor()">Calcular</button>
+    <p id="resultadoSucessor"></p>
+  </div>
+  <!-- 11 - Dias em Horas -->
+  <div class="exercicio">
+    <h2>11 - Dias em Horas</h2>
+    <input type="number" id="dias" placeholder="Dias">
+    <button onclick="diasEmHoras()">Converter</button>
+    <p id="resultadoDiasHoras"></p>
+  </div>
+
+  <!-- 12 - Cálculo de Salário -->
+  <div class="exercicio">
+    <h2>12 - Cálculo de Salário</h2>
+    <input type="number" id="valorHora" placeholder="Valor da hora">
+    <input type="number" id="horasMes" placeholder="Horas no mês">
+    <button onclick="calcularSalario()">Calcular</button>
+    <p id="resultadoSalario"></p>
+  </div>
+
+  <!-- 13 - Verificador de Paridade -->
+  <div class="exercicio">
+    <h2>13 - Verificador de Paridade</h2>
+    <input type="number" id="numParidade" placeholder="Número">
+    <button onclick="verificarParidade()">Verificar</button>
+    <p id="resultadoParidade"></p>
+  </div>
+
+  <!-- 14 - Gorjeta do Garçom -->
+  <div class="exercicio">
+    <h2>14 - Gorjeta do Garçom</h2>
+    <input type="number" id="conta" placeholder="Valor da conta">
+    <button onclick="calcularGorjeta()">Calcular</button>
+    <p id="resultadoGorjeta"></p>
+  </div>
+
+  <!-- 15 - Perímetro de Retângulo -->
+  <div class="exercicio">
+    <h2>15 - Perímetro de Retângulo</h2>
+    <input type="number" id="largura" placeholder="Largura">
+    <input type="number" id="alturaRet" placeholder="Altura">
+    <button onclick="calcularPerimetro()">Calcular</button>
+    <p id="resultadoPerimetro"></p>
+  </div>
+
+  <!-- 16 - Conversor de Metros -->
+  <div class="exercicio">
+    <h2>16 - Conversor de Metros</h2>
+    <input type="number" id="metros" placeholder="Metros">
+    <button onclick="converterMetros()">Converter</button>
+    <p id="resultadoMetros"></p>
+  </div>
+
+  <!-- 17 - Cálculo de Combustível -->
+  <div class="exercicio">
+    <h2>17 - Cálculo de Combustível</h2>
+    <input type="number" id="distancia" placeholder="Distância (km)">
+    <input type="number" id="consumo" placeholder="Consumo (km/l)">
+    <button onclick="calcularCombustivel()">Calcular</button>
+    <p id="resultadoCombustivel"></p>
+  </div>
+
+  <!-- 18 - Reajuste Salarial -->
+  <div class="exercicio">
+    <h2>18 - Reajuste Salarial</h2>
+    <input type="number" id="salarioAtual" placeholder="Salário atual">
+    <button onclick="reajusteSalarial()">Calcular</button>
+    <p id="resultadoReajuste"></p>
+  </div>
+
+  <!-- 19 - Tempo de Viagem -->
+  <div class="exercicio">
+    <h2>19 - Tempo de Viagem</h2>
+    <input type="number" id="distanciaViagem" placeholder="Distância (km)">
+    <input type="number" id="velocidadeMedia" placeholder="Velocidade média (km/h)">
+    <button onclick="tempoViagem()">Calcular</button>
+    <p id="resultadoViagem"></p>
+  </div>
+
+  <!-- 20 - Divisor de Conta -->
+  <div class="exercicio">
+    <h2>20 - Divisor de Conta</h2>
+    <input type="number" id="valorConta" placeholder="Valor da conta">
+    <input type="number" id="pessoas" placeholder="Nº de pessoas">
+    <button onclick="dividirConta()">Calcular</button>
+    <p id="resultadoConta"></p>
+  </div>
+
+  <!-- 21 - Idade em Dias -->
+  <div class="exercicio">
+    <h2>21 - Idade em Dias</h2>
+    <input type="number" id="idadeAnos" placeholder="Idade em anos">
+    <button onclick="idadeEmDias()">Converter</button>
+    <p id="resultadoIdadeDias"></p>
+  </div>
+
+  <!-- 22 - Área de Triângulo -->
+  <div class="exercicio">
+    <h2>22 - Área de Triângulo</h2>
+    <input type="number" id="baseTri" placeholder="Base">
+    <input type="number" id="alturaTri" placeholder="Altura">
+    <button onclick="areaTriangulo()">Calcular</button>
+    <p id="resultadoTriangulo"></p>
+  </div>
+
+  <!-- 23 - Potenciação -->
+  <div class="exercicio">
+    <h2>23 - Potenciação</h2>
+    <input type="number" id="baseNum" placeholder="Base">
+    <input type="number" id="expoente" placeholder="Expoente">
+    <button onclick="potenciacao()">Calcular</button>
+    <p id="resultadoPotencia"></p>
+  </div>
+
+  <!-- 24 - Inversão de String -->
+  <div class="exercicio">
+    <h2>24 - Inversão de String</h2>
+    <input type="text" id="palavra" placeholder="Digite uma palavra">
+    <button onclick="inverterString()">Inverter</button>
+    <p id="resultadoString"></p>
+  </div>
+
+  <!-- 25 - Preço de Venda -->
+  <div class="exercicio">
+    <h2>25 - Preço de Venda</h2>
+    <input type="number" id="custo" placeholder="Custo do produto">
+    <input type="number" id="margemLucro" placeholder="Margem de lucro (%)">
+    <button onclick="precoVenda()">Calcular</button>
+    <p id="resultadoVenda"></p>
+  </div>
+
+  <!-- ... Repita esse padrão até o Exercício 25 -->
+
+  <script src="script.js"></script>
+</body>
+</html>
